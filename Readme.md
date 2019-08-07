@@ -8,3 +8,4 @@ Exp1: Write a program that parses given string using string tokenizer class and 
 Exp2: Write a program that parses a given string using split method of the string class (delimeter is underscore)
 Exp3: Write a program that parses a given string using Scammer class and identifies the number of different primitive datatypes in the given string like int, double, etc and lists these seperately(delimeter is white space)
 Exp4: Write a program to take input from the console using scanner class. Subsequentlly prompt the user to enter his name, roll no and cgpa and store these values in string, int and double respectively
+Exp5: Parse the content of a file(.txt) using string tokenizer class (delimeter is white space)
