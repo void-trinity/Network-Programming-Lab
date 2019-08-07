@@ -13,3 +13,5 @@ Exp3: Write a program that parses a given string using Scammer class and identif
 Exp4: Write a program to take input from the console using scanner class. Subsequentlly prompt the user to enter his name, roll no and cgpa and store these values in string, int and double respectively.
 
 Exp5: Parse the content of a file(.txt) using string tokenizer class (delimeter is white space).
+
+Exp6: Parse the content of a file(.txt) using Scanner class and identifies the number of different primitive datatypes in the given string like int, double, etc and lists these seperately(delimeter is white space).
