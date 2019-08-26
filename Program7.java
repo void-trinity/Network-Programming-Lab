@@ -1,27 +1,34 @@
 import java.util.StringTokenizer;
 import java.io.*;
-public class Program7 {
-	public static void main(String[] args) throws IOException {
-		try {
-			FileReader file = new FileReader("C:\\Users\\CSE\\eclipse-workspace\\78NPLab\\src\\urls.txt");
-			BufferedReader reader = new BufferedReader(file);
-			StringTokenizer st = new StringTokenizer(reader.readLine());
-			int count = 0;
-			while(st.hasMoreTokens())
-			{
-				count = 0;
-				for(String s: st.nextToken().split("\\?")[1].split("\\=")) {
-					if(count == 0)
-						System.out.println("Key: " + s);
-					else
-						System.out.println("Value: " + s);
-					count = 1-count;
-				}
-			}
-			reader.close();
-			
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
-	}
+class Program7 {
+    public static void main(String args[]) {
+        try {
+            FileReader file = new FileReader("/home/trinity/IdeaProjects/NP Lab/src/urls.txt");
+            BufferedReader reader = new BufferedReader(file);
+            StringTokenizer st = new StringTokenizer(reader.readLine());
+            int count = 0;
+            while(st.hasMoreTokens())
+            {
+                count++;
+                String s = new String(st.nextToken());
+                int queIndex = s.indexOf('?');
+                if(queIndex != -1) {
+                    String queryString = s.substring(queIndex+1);
+                    while(queryString.indexOf('&') != -1) {
+                        String query = queryString.substring(0, queryString.indexOf('&'));
+                        System.out.printf("%s\n", query);
+                        queryString = queryString.substring(queryString.indexOf('&')+1);
+                    }
+                    System.out.printf("%s\n", queryString);
+                }
+            }
+            System.out.printf("Count of urls = %d", count);
+            reader.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
 }
