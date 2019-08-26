@@ -17,3 +17,7 @@ Exp5: Parse the content of a file(.txt) using string tokenizer class (delimeter 
 Exp6: Parse the content of a file(.txt) using Scanner class and identifies the number of different primitive datatypes in the given string like int, double, etc and lists these seperately(delimeter is white space).
 
 Exp7: A file urls.txt has a list of various web urls (seperated by white space). Identify the number of these urls. For each URL, identify query string. Also find various parameters (fields) in the query string. Implement this program using string tokenizer.
+
+Exp8: A file urls.txt has a list of various web urls (seperated by white space). Identify the number of these urls. For each URL, identify query string. Also find various parameters (fields) in the query string. Implement this program using string split method.
+
+Exp9: Write a program that asks the user to input a regular expression and a test string and reports all the substrings of the test string matching the given regular expression along with indices of the substring.
