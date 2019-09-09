@@ -23,3 +23,5 @@ Exp8: A file urls.txt has a list of various web urls (seperated by white space).
 Exp9: Write a program that asks the user to input a regular expression and a test string and reports all the substrings of the test string matching the given regular expression along with indices of the substring.
 
 Exp10: Write a program that asks the user to input a regular expression and a test string and replaces all the substrings of the test string matching the given regular expression.
+
+Exp11: Write a program for TCP implementation of a simple echo client-server pair
