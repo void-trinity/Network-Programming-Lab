@@ -25,3 +25,5 @@ Exp9: Write a program that asks the user to input a regular expression and a tes
 Exp10: Write a program that asks the user to input a regular expression and a test string and replaces all the substrings of the test string matching the given regular expression.
 
 Exp11: Write a program for TCP implementation of a simple echo client-server pair
+
+Exp12: Write a program for TCP implementation of arithmetic calculator
