@@ -27,3 +27,7 @@ Exp10: Write a program that asks the user to input a regular expression and a te
 Exp11: Write a program for TCP implementation of a simple echo client-server pair
 
 Exp12: Write a program for TCP implementation of arithmetic calculator
+
+Exp13: Write a program for UDP implementation of a simple echo client-server pair
+
+Exp14: Write a program for UDP implementation of arithmetic calculator
