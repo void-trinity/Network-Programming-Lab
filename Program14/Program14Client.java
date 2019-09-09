@@ -16,12 +16,11 @@ public class Program14Client {
             clientSocket.send(sendPacket);
             DatagramPacket receivePacket = new DatagramPacket(receiveData, receiveData.length);
             int count = 1;
-            while(true) {
-                if (count == 4)
-                    break;
+            while(count < 5) {
                 clientSocket.receive(receivePacket);
                 String message = new String(receivePacket.getData());
                 System.out.println("FROM SERVER: " + message);
+                count++;
             }
             clientSocket.close();
         } catch (SocketException | UnknownHostException e) {
